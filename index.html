@@ -24,49 +24,57 @@
   <meta name="robots" content="nofollow" />
   <link rel="shortcut icon" href="https://static.tildacdn.info/img/tildafavicon.ico" type="image/x-icon" />
   <!-- Assets -->
-  <script src="https://stat.tildacdn.com/js/tilda-fallback-1.0.min.js" charset="utf-8" async>
-  </script>
+  <script src="https://stat.tildacdn.com/js/tilda-fallback-1.0.min.js" charset="utf-8" async></script>
   <link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-grid-3.0.min.css" type="text/css" media="all"
     onerror="this.loaderr='y';" />
-  <link rel="stylesheet" href="/tilda-blocks-page28314816.min.css?t=1654959188" type="text/css" media="all"
+  <link rel="stylesheet" href="/tilda-blocks-page28314816.min.css?t=1655558391" type="text/css" media="all"
     onerror="this.loaderr='y';" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&subset=latin,cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-animation-1.0.min.css" type="text/css" media="all"
     onerror="this.loaderr='y';" />
+  <link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-slds-1.4.min.css" type="text/css" media="print"
+    onload="this.media='all';" onerror="this.loaderr='y';" /><noscript>
+    <link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-slds-1.4.min.css" type="text/css" media="all" />
+  </noscript>
+  <link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-zoom-2.0.min.css" type="text/css" media="print"
+    onload="this.media='all';" onerror="this.loaderr='y';" /><noscript>
+    <link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-zoom-2.0.min.css" type="text/css" media="all" />
+  </noscript>
   <link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-cover-1.0.min.css" type="text/css" media="all"
     onerror="this.loaderr='y';" />
   <link rel="stylesheet" href="https://static.tildacdn.info/css/tilda-forms-1.0.min.css" type="text/css" media="all"
     onerror="this.loaderr='y';" />
-  <script type="text/javascript">function t_onReady(func) {
-      if (document.readyState != 'loading') {
-        func();
-      } else {
-        document.addEventListener('DOMContentLoaded', func);
+  <script
+    type="text/javascript">function t_onReady(func) {
+        if (document.readyState != 'loading') {
+          func();
+        } else {
+          document.addEventListener('DOMContentLoaded', func);
+        }
       }
-    }
-    function t_onFuncLoad(funcName, okFunc, time) {
-      if (typeof window[funcName] === 'function') {
-        okFunc();
-      } else {
-        setTimeout(function () {
-          t_onFuncLoad(funcName, okFunc, time);
-        }, (time || 100));
-      }
-    }
-    function t_throttle(fn, threshhold, scope) {
-      return function () {
-        fn.apply(scope || this, arguments);
-      };
-    }			
-  </script>
+      function t_onFuncLoad(funcName, okFunc, time) {
+        if (typeof window[funcName] === 'function') {
+          okFunc();
+        } else {
+          setTimeout(function () {
+            t_onFuncLoad(funcName, okFunc, time);
+          }, (time || 100));
+        }
+      } function t_throttle(fn, threshhold, scope) { return function () { fn.apply(scope || this, arguments); }; }</script>
   <script src="https://static.tildacdn.info/js/jquery-1.10.2.min.js" onerror="this.loaderr='y';"></script>
   <script src="https://static.tildacdn.info/js/tilda-scripts-3.0.min.js" onerror="this.loaderr='y';"></script>
-  <script src="/tilda-blocks-page28314816.min.js?t=1654959188" onerror="this.loaderr='y';"></script>
+  <script src="/tilda-blocks-page28314816.min.js?t=1655558391" onerror="this.loaderr='y';"></script>
   <script src="https://static.tildacdn.info/js/lazyload-1.3.min.js" charset="utf-8" async
     onerror="this.loaderr='y';"></script>
   <script src="https://static.tildacdn.info/js/tilda-animation-1.0.min.js" charset="utf-8" async
+    onerror="this.loaderr='y';"></script>
+  <script src="https://static.tildacdn.info/js/tilda-slds-1.4.min.js" charset="utf-8" async
+    onerror="this.loaderr='y';"></script>
+  <script src="https://static.tildacdn.info/js/hammer.min.js" charset="utf-8" async
+    onerror="this.loaderr='y';"></script>
+  <script src="https://static.tildacdn.info/js/tilda-zoom-2.0.min.js" charset="utf-8" async
     onerror="this.loaderr='y';"></script>
   <script src="https://static.tildacdn.info/js/tilda-cover-1.0.min.js" charset="utf-8" async
     onerror="this.loaderr='y';"></script>
@@ -96,18 +104,36 @@
         document.addEventListener('DOMContentLoaded', t_setvisRecs);
       }
     })();</script>
-  <!--Подключение js и css-->
-
-  <link rel="stylesheet" type="text/css" href="lord.css">
-  <script src="wood.js"></script>
+  <link rel="stylesheet" type="text/css" href="add.css">
+  <script src="add.js"></script>
   <script src="js_main.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css_main.min.css">
+  <style>
+    .grid img {
+      padding: 4px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .grid img:hover {
+      opacity: 0.6;
+      filter: alpha(opacity=60);
+    }
+  </style>
+  <!-- Bootstrap CSS -->
+  <link href="for_moz/bootstrap.min.css" rel="stylesheet">
+  <!-- fancyBox CSS -->
+  <link href="for_moz/jquery.fancybox.min.css" rel="stylesheet">
 </head>
 
-<body class="t-body" style="margin:0;">
-  <!--allrecords-->
+
+<body class="t-body" style="margin:0; ">
+  <!--Стили-->
   <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="5705406"
-    data-tilda-page-id="28314816" data-tilda-formskey="556ca7129cf9ad017e02735125705406" data-tilda-lazy="yes">
+    data-tilda-page-id="28314816" data-tilda-formskey="556ca7129cf9ad017e02735125705406" data-tilda-lazy="yes"
+    style="background-color: #262f39;">
+    <!--Меню навигации, статическая-->
     <div id="rec457495155" class="r t-rec" style="background-color:#000000; " data-animationappear="off"
       data-record-type="456" data-bg-color="#000000">
       <!-- T456 -->
@@ -116,15 +142,21 @@
         data-bgcolor-hex="#000000" data-bgcolor-rgba="rgba(0,0,0,1)" data-navmarker="nav457495155marker"
         data-appearoffset="" data-bgopacity-two="100" data-menushadow="" data-bgopacity="1"
         data-bgcolor-rgba-afterscroll="rgba(0,0,0,1)" data-menu-items-align="center" data-menu="yes">
-        <div class="t456__maincontainer t456__c12collumns" style="height:115px;">
+        <div class="t456__maincontainer t456__c12collumns" style="height:115px; margin-left: 60px">
           <div class="t456__leftwrapper" style="padding-left:20px;min-width:110px;width:110px;">
             <div style="display: block;"> <img
                 src="https://static.tildacdn.info/tild3732-6364-4137-a233-633533616362/logo_min.png"
                 class="t456__imglogo t456__imglogomobile" imgfield="img" style="max-width: 110px; width: 110px;"
                 alt="Черное дерево"> </div>
           </div>
+          <div class="t456__logo t456__rightwrapper t456__menualign_center"
+            style="position:relative;padding-top: 20%; text-align:left; min-height:30px;">
+            <a href="http://черноедерево.рф">
+              <div class="t171__title" style="color:#ffffff;font-weight:600;">Черное дерево</div>
+            </a>
+          </div>
           <div class="t456__rightwrapper t456__menualign_center" style="padding-right:20px;">
-            <ul class="t456__list">
+            <ul class="t456__list" style="margin-right: 0px;">
               <li class="t456__list_item" style="padding:0 15px 0 0;"><a class="t-menu__link-item" href="#catalog"
                   data-menu-submenu-hook="" style="color:#ffffff;font-weight:600;" data-menu-item-number="1">Каталог</a>
               </li>
@@ -214,16 +246,18 @@
 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', endColorstr='#D9000000');
 }</style><![endif]-->
     </div>
+
     <div id="rec457493532" class="r t-rec" style="background-color:#000000; " data-animationappear="off"
       data-record-type="456" data-bg-color="#000000">
       <!-- T456 -->
       <div id="nav457493532marker"></div>
+      <!--Меню навигации, динамическая-->
       <div id="nav457493532" class="t456 t456__positionfixed t456__beforeready"
         style="background-color: rgba(0,0,0,1); height:115px; " data-bgcolor-hex="#000000"
         data-bgcolor-rgba="rgba(0,0,0,1)" data-navmarker="nav457493532marker" data-appearoffset="900px"
         data-bgopacity-two="100" data-menushadow="" data-bgopacity="1" data-bgcolor-rgba-afterscroll="rgba(0,0,0,1)"
         data-menu-items-align="center" data-menu="yes">
-        <div class="t456__maincontainer t456__c12collumns" style="height:115px;">
+        <div class="t456__maincontainer t456__c12collumns" style="height:115px; margin-left: 60px">
           <div class="t456__leftwrapper" style="padding-left:20px;min-width:110px;width:110px;">
             <div style="display: block;"> <img
                 src="https://static.tildacdn.info/tild6339-3736-4264-b736-653765316263/logo_min.png"
@@ -337,28 +371,177 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', en
 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', endColorstr='#D9000000');
 }</style><![endif]-->
       </div>
-      <div id="rec457483483" class="r t-rec" style=" " data-animationappear="off" data-record-type="168">
+      <!-- Блок с каруселью-->
+      <div id="rec459949490" class="r t-rec t-rec_pt_30 t-rec_pb_30"
+        style="background-color: #262f39; padding-top:30px;padding-bottom:30px; " data-animationappear="off"
+        data-record-type="670">
+        <div class="t670">
+          <div class="t-slds" style="visibility: hidden;">
+            <div class="t-container t-slds__main">
+              <div class="t-slds__container t-width t-width_12 t-margin_auto">
+                <div class="t-slds__items-wrapper t-slds_animated-slow t-slds__witharrows" data-slider-transition="500"
+                  data-slider-with-cycle="true" data-slider-correct-height="false"
+                  data-auto-correct-mobile-width="false">
+                  <div class="t-slds__item t-slds__item_active" data-slide-index="1">
+                    <div class="t-width t-width_12 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject">
+                      <div class="t-slds__wrapper t-align_center">
+                        <meta itemprop="image" content="images/table1.jpg">
+                        <div class="t670__imgwrapper" bgimgfield="gi_img__0">
+                          <div class="t-slds__bgimg t-bgimg" data-original="images/table1.jpg" data-zoomable="yes"
+                            data-img-zoom-url="images/table1.jpg"
+                            style="background-image: url('https://static.tildacdn.info/tild3437-3839-4037-b639-643935383936/-/resizeb/20x/jorgenhaland101813.jpg');">
+                          </div>
+                          <div class="t670__separator" data-slider-image-width="1160" data-slider-image-height="550">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t-slds__item " data-slide-index="2">
+                    <div class="t-width t-width_12 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject">
+                      <div class="t-slds__wrapper t-align_center">
+                        <meta itemprop="image" content="images/table2.jpg">
+                        <div class="t670__imgwrapper" bgimgfield="gi_img__1">
+                          <div class="t-slds__bgimg t-bgimg" data-original="images/table2.jpg" data-zoomable="yes"
+                            data-img-zoom-url="images/table2.jpg"
+                            style="background-image: url('https://static.tildacdn.info/tild6637-6131-4438-a662-626134663032/-/resizeb/20x/cherrylaithang138648.jpg');">
+                          </div>
+                          <div class="t670__separator" data-slider-image-width="1160" data-slider-image-height="550">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="t-slds__item " data-slide-index="3">
+                    <div class="t-width t-width_12 t-margin_auto" itemscope itemtype="http://schema.org/ImageObject">
+                      <div class="t-slds__wrapper t-align_center">
+                        <meta itemprop="image" content="images/table3.jpg">
+                        <div class="t670__imgwrapper" bgimgfield="gi_img__2">
+                          <div class="t-slds__bgimg t-bgimg" data-original="images/table3.jpg" data-zoomable="yes"
+                            data-img-zoom-url="images/table3.jpg"
+                            style="background-image: url('https://static.tildacdn.info/tild3966-3235-4563-b465-373632393036/-/resizeb/20x/chrisbarbalis223997.jpg');">
+                          </div>
+                          <div class="t670__separator" data-slider-image-width="1160" data-slider-image-height="550">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="t-slds__arrow_container ">
+                <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-left" data-slide-direction="left">
+                  <div class="t-slds__arrow t-slds__arrow-left t-slds__arrow-withbg"
+                    style="width: 40px; height: 40px;background-color: rgba(232,232,232,1);">
+                    <div class="t-slds__arrow_body t-slds__arrow_body-left" style="width: 9px;"> <svg
+                        style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>Left</desc>
+                        <polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt"
+                          stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5" />
+                      </svg> </div>
+                  </div>
+                </div>
+                <div class="t-slds__arrow_wrapper t-slds__arrow_wrapper-right" data-slide-direction="right">
+                  <div class="t-slds__arrow t-slds__arrow-right t-slds__arrow-withbg"
+                    style="width: 40px; height: 40px;background-color: rgba(232,232,232,1);">
+                    <div class="t-slds__arrow_body t-slds__arrow_body-right" style="width: 9px;"> <svg
+                        style="display: block" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>Right</desc>
+                        <polyline fill="none" stroke="#000000" stroke-linejoin="butt" stroke-linecap="butt"
+                          stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5" />
+                      </svg> </div>
+                  </div>
+                </div>
+              </div>
+              <div class="t-slds__bullet_wrapper">
+                <div class="t-slds__bullet t-slds__bullet_active" data-slide-bullet-for="1">
+                  <div class="t-slds__bullet_body" style="background-color: #c7c7c7;"></div>
+                </div>
+                <div class="t-slds__bullet " data-slide-bullet-for="2">
+                  <div class="t-slds__bullet_body" style="background-color: #c7c7c7;"></div>
+                </div>
+                <div class="t-slds__bullet " data-slide-bullet-for="3">
+                  <div class="t-slds__bullet_body" style="background-color: #c7c7c7;"></div>
+                </div>
+              </div>
+              <div class="t-slds__caption__container"> </div>
+            </div>
+          </div>
+        </div>
+        <script> t_onReady(function () {
+            setTimeout(function () {
+              t_onFuncLoad('t670_init', function () {
+                t670_init('459949490');
+              });
+              t_onFuncLoad('t_sldsInit', function () {
+                t_sldsInit('459949490');
+              });
+            }, 500);
+            if (typeof jQuery !== 'undefined') {
+              $('.t670').bind('displayChanged', function () {
+                t_onFuncLoad('t_slds_updateSlider', function () {
+                  t_slds_updateSlider('459949490');
+                });
+                t_onFuncLoad('t_slds_positionArrows', function () {
+                  t_slds_positionArrows('459949490');
+                });
+              });
+            } else {
+              var rec = document.querySelector('#rec459949490');
+              if (rec) {
+                var wrapper = rec.querySelector('.t670');
+                wrapper.addEventListener('displayChanged', function () {
+                  t_onFuncLoad('t_slds_updateSlider', function () {
+                    t_slds_updateSlider('459949490');
+                  });
+                  t_onFuncLoad('t_slds_positionArrows', function () {
+                    t_slds_positionArrows('459949490');
+                  });
+                });
+              }
+            }
+          });</script>
+        <style>
+          #rec459949490 .t-slds__bullet_active .t-slds__bullet_body {
+            background-color: #222 !important;
+          }
+
+          #rec459949490 .t-slds__bullet:hover .t-slds__bullet_body {
+            background-color: #222 !important;
+          }
+        </style>
+      </div>
+      <!--Блок "Собственное производство эксклюзивной мебели из эпоксидной смолы и натурального дерева"-->
+      <div id="rec457483483" class="r t-rec" style="background-color: #262f39;" data-animationappear="off"
+        data-record-type="168">
         <!-- cover -->
         <div class="t-cover" id="recorddiv457483483" bgimgfield="img"
           style="height:100vh; background-image:url('https://static.tildacdn.info/tild3934-3031-4035-a565-396565616664/-/resize/20x/main.jpg');">
           <div class="t-cover__carrier" id="coverCarry457483483" data-content-cover-id="457483483"
-            data-content-cover-bg="https://static.tildacdn.info/tild3934-3031-4035-a565-396565616664/main.jpg"
-            data-content-cover-height="100vh" data-content-cover-parallax="dynamic"
-            style="height:100vh;background-attachment:scroll; "></div>
+            data-content-cover-bg="images/main.jpg" data-content-cover-height="100vh"
+            data-content-cover-parallax="dynamic" style="height:100vh;background-attachment:scroll; "></div>
           <div class="t-cover__filter"
             style="height:100vh;background-image: -moz-linear-gradient(top, rgba(9,47,51,0.0), rgba(8,29,31,0.0));background-image: -webkit-linear-gradient(top, rgba(9,47,51,0.0), rgba(8,29,31,0.0));background-image: -o-linear-gradient(top, rgba(9,47,51,0.0), rgba(8,29,31,0.0));background-image: -ms-linear-gradient(top, rgba(9,47,51,0.0), rgba(8,29,31,0.0));background-image: linear-gradient(top, rgba(9,47,51,0.0), rgba(8,29,31,0.0));filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fe092f33', endColorstr='#fe081d1f');">
           </div>
           <div class="t-container">
-            <div class="t-col t-col_8 ">
+            <div class="t-col t-col_12 ">
               <div class="t-cover__wrapper t-valign_middle" style="height:100vh;">
                 <div class="t001 t-align_left">
                   <div class="t001__wrapper" data-hook-content="covercontent">
                     <div class="t001__title t-title t-title_xl t-animate" data-animate-style="fadeindown"
-                      data-animate-group="yes" style="color:#ffffff;font-size:65px;" field="title">Мы открылись!</div>
-                    <div class="t001__descr t-descr t-descr_xl t-animate" data-animate-style="fadeindown"
-                      data-animate-group="yes" style="color:#ffffff;" field="descr">Изготовление&nbsp;столов из
-                      эпоксидной
-                      смолы и дерева</div> <span class="space"></span>
+                      data-animate-group="yes" style="color:#ffffff;font-size:65px;" field="title">Собственное
+                      производство эксклюзивной мебели из эпоксидной смолы и натурального дерева</div>
+                    <div class="t776__btn-wrapper t1002__btns-wrapper " style="text-align: center;"> <a href="#catalog"
+                        class="t776__btn t-btn t-btn_sm"
+                        style="color:#ffffff;background-color:#ff6600;border-radius:50px; -moz-border-radius:50px; -webkit-border-radius:50px;">
+                        <table style="width:100%; height:100%;">
+                          <tr>
+                            <td>Подробнее</td>
+                          </tr>
+                        </table>
+                      </a> </div>
                   </div>
                 </div>
               </div>
@@ -366,6 +549,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', en
           </div>
         </div>
       </div>
+
       <div id="rec457591292" class="r t-rec" style=" " data-animationappear="off" data-record-type="396">
         <!-- T396 -->
         <style>
@@ -408,28 +592,58 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', en
             });
           });</script><!-- /T396 -->
       </div>
-      <div id="rec457483484" class="r t-rec" style=" " data-record-type="215"><a name="about" style="font-size:0;"></a>
+      <div id="rec457483484" class="r t-rec" data-record-type="215"><a name="about" style="font-size:0;"></a>
       </div>
-      <div id="rec457483484" class="r t-rec" style=" " data-record-type="215"><a name="catalog"
-          style="font-size:0;"></a>
+      <div id="rec457483484" class="r t-rec" data-record-type="215"><a name="catalog" style="font-size:0;"></a>
       </div>
-      <div id="rec457483486" class="r t-rec" style=" " data-record-type="215"><a name="service"
-          style="font-size:0;"></a>
+      <div id="rec457483486" class="r t-rec" data-record-type="215"><a name="service" style="font-size:0;"></a>
       </div>
       <div id="rec457483487" class="r t-rec t-rec_pt_165 t-rec_pb_120"
-        style="padding-top:60px;padding-bottom:55px;background-color:#ededed; " data-record-type="30"
-        data-bg-color="#ededed">
+        style="padding-top:60px; padding-bottom:55px; background-color:#262f39; " data-record-type="30"
+        data-bg-color="#262f39">
+        <!--Мы открылись-->
+        <div id="rec460003401" class="r" style="padding-top:50x;padding-bottom:30px; background-color: #262f39">
+
+          <!-- T050 -->
+          <div id="rec460003401" class="r t-rec" data-record-type="60">
+            <!-- T050 -->
+            <div class="t050">
+              <div class="t-container t-align_center">
+                <div class="t-col t-col_10 t-prefix_1" style="padding-bottom: 50px;">
+                  <div class="t050__title t-title t-title_xxl" field="title" style=""><span
+                      style="color: rgb(255, 0, 0);">Мы
+                      открылись!</span></div>
+                  <div class="t050__descr t-descr t-descr_xxl" field="descr" style=""><strong>г. Воронеж Ленинский
+                      проспект
+                      156 В, ТЦ Остужевский дом мебели</strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="rec460625878" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px; "
+            data-record-type="3">
+            <!-- T107 -->
+            <div class="t107">
+              <div class="t-align_center" itemscope itemtype="images/adress.png">
+                <meta itemprop="image" content="images/adress.png">
+                <img style="width: auto; height: 400px;" src="images/adress.png" data-original="images/adress.png"
+                  class="t107__widthauto t-img" imgfield="img" />
+              </div>
+            </div>
+          </div>
+
+        </div>
         <!-- T015 -->
-        <div class="t015">
+        <div id="catalog" class="t015">
           <div class="t-container t-align_center">
-            <div class="t-col t-col_8 t-prefix_2">
-              <div class="t015__title t-title t-title_lg" field="title" style="font-size:52px;">Наши услуги <br /></div>
+            <div class="t015__title t-title t-title_lg" field="title" style="font-size:52px;">Каталог
+              <br />
             </div>
           </div>
         </div>
       </div>
       <!-- t776 -->
-      <div class="t776" data-show-count="">
+      <div class="t776" data-show-count="" style="background-color: #262f39;">
         <div class="t776__parent mobile-two-columns t776__container_mobile-grid" data-buttons-v-align="yes"
           data-blocks-per-row=4>
           <div class="t776__col t-col t-col_3 t-align_left t-item t776__col_mobile-grid js-product"
@@ -3006,8 +3220,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', en
         data-bg-color="#ededed">
       </div>
       <div id="rec457483490" class="r t-rec t-rec_pt_0 t-rec_pb_90"
-        style="padding-top:0px;padding-bottom:90px;background-color:#ededed; " data-record-type="117"
-        data-bg-color="#ededed">
+        style="padding-top:0px;padding-bottom:90px;background-color:#262f39; " data-record-type="117"
+        data-bg-color="#262f39">
       </div>
       <div id="rec457483493" class="r t-rec" style=" " data-record-type="215"><a name="contact"
           style="font-size:0;"></a>
@@ -3048,16 +3262,62 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', en
         </div>
       </div>
     </div>
-    <!--Галерея-->
+    <!--Воплощение мечты-->
+    <div id="vopl_mecht" style="margin-bottom: 800px; background-color: #262f39">
+      <div style="text-align: center;">
+        <div class="t015__title t-title t-title_lg" field="title" style="font-size:52px;">Воплощение мечты
+        </div>
+        <!--Мозаика-->
+        <div class="grid">
+          <a data-fancybox="gallery" href="images/5.jpg"><img class="img-fluid" src="images/5.jpg"></a>
+          <a data-fancybox="gallery" href="images/6.jpg"><img class="img-fluid" src="images/6.jpg"></a>
+
+          <a data-fancybox="gallery" href="images/1.jpg"><img class="img-fluid" src="images/1.jpg"></a>
+
+          <a data-fancybox="gallery" href="images/7.jpg"><img class="img-fluid" src="images/7.jpg"></a>
+          <a data-fancybox="gallery" href="images/2.jpg"><img class="img-fluid" src="images/2.jpg"></a>
+
+          <a data-fancybox="gallery" href="images/8.jpg"><img class="img-fluid" src="images/8.jpg"></a>
+          <a data-fancybox="gallery" href="images/3.jpg"><img class="img-fluid" src="images/3.jpg"></a>
+          <a data-fancybox="gallery" href="images/9.jpg">
+            <img class="img-fluid" src="images/9.jpg"></a>
+          <a data-fancybox="gallery" href="images/4.jpg"><img class="img-fluid" src="images/4.jpg"></a>
+          <a data-fancybox="gallery" href="images/10.jpg"><img class="img-fluid" src="images/10.jpg"></a>
+          <a data-fancybox="gallery" href="images/11.jpg">
+            <img class="img-fluid" src="images/11.jpg"></a>
+          <a data-fancybox="gallery" href="images/12.jpg">
+            <img class="img-fluid" src="images/12.jpg"></a>
+        </div>
+
+
+        <script type="text/javascript" src="for_moz/jquery-321.js"></script>
+        <script type="text/javascript" src="for_moz/gridify.js"></script>
+        <script src="for_moz/jquery.fancybox.min.js"></script>
+        <script>
+          $(function () {
+            var options = {
+              srcNode: 'img',             // grid items (class, node)
+              margin: '15px',             // margin in pixel
+              width: '240px',             // grid item width in pixel
+              max_width: '',              // dynamic gird item width
+              resizable: true,            // re-layout if window resize
+              transition: 'all 0.5s ease' // support transition for CSS3
+            };
+            $('.grid').gridify(options);
+          });
+        </script>
+      </div>
+    </div>
+
     <!--Цвет масла-->
     <div id="rec334195950" class="r t-rec t-rec_pt_60 t-rec_pt-res-480_60 t-rec_pb_0"
-      style="padding-top:60px;padding-bottom:0px;background-color:#f6fafb; " data-animationappear="off"
-      data-record-type="396" data-bg-color="#f6fafb">
+      style="padding-top:60px;padding-bottom:0px;background-color:#262f39; " data-animationappear="off"
+      data-record-type="396" data-bg-color="#262f39">
       <!-- T396 -->
       <style>
         #rec334195950 .t396__artboard {
           height: 200px;
-          background-color: #f6fafb;
+          background-color: #262f39;
         }
 
         #rec334195950 .t396__filter {
@@ -3270,16 +3530,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', en
           }
         }
       </style>
-      <div class="t396">
-        <div class="t396__artboard rendered" data-artboard-recid="334195950" data-artboard-height="200"
+      <div class='t396'>
+        <div class="t396__artboard" data-artboard-recid="334195950" data-artboard-height="200"
           data-artboard-height-res-960="200" data-artboard-height-res-640="180" data-artboard-height-res-480="140"
           data-artboard-height-res-320="180" data-artboard-height_vh="" data-artboard-valign="center"
-          data-artboard-upscale="" data-artboard-ovrflw="" data-artboard-proxy-min-offset-top="0"
-          data-artboard-proxy-min-height="200" data-artboard-proxy-max-height="200">
+          data-artboard-upscale="" data-artboard-ovrflw="">
           <div class="t396__carrier" data-artboard-recid="334195950"></div>
           <div class="t396__filter" data-artboard-recid="334195950"></div>
-          <div class="t396__elem tn-elem tn-elem__3341959501625646150653" data-elem-id="1625646150653"
-            data-elem-type="text" data-field-top-value="45" data-field-top-res-960-value="45"
+          <div class='t396__elem tn-elem tn-elem__3341959501625646150653' data-elem-id='1625646150653'
+            data-elem-type='text' data-field-top-value="45" data-field-top-res-960-value="45"
             data-field-top-res-640-value="25" data-field-top-res-480-value="23" data-field-top-res-320-value="15"
             data-field-left-value="0" data-field-left-res-960-value="0" data-field-left-res-640-value="1"
             data-field-left-res-480-value="0" data-field-left-res-320-value="0" data-field-width-value="831"
@@ -3287,13 +3546,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', en
             data-field-width-res-480-value="460" data-field-width-res-320-value="300" data-field-axisy-value="top"
             data-field-axisx-value="center" data-field-axisx-res-960-value="center"
             data-field-axisx-res-640-value="center" data-field-container-value="grid" data-field-topunits-value="px"
-            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-            data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-            style="top: 45px; left: 216px; width: 831px;">
-            <div class="tn-atom" field="tn_text_1625646150653">Выберите цвет масла</div>
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1625646150653'>Выберите цвет масла</div>
           </div>
-          <div class="t396__elem tn-elem tn-elem__3341959501625646150666" data-elem-id="1625646150666"
-            data-elem-type="text" data-field-top-value="113" data-field-top-res-960-value="115"
+          <div class='t396__elem tn-elem tn-elem__3341959501625646150666' data-elem-id='1625646150666'
+            data-elem-type='text' data-field-top-value="113" data-field-top-res-960-value="115"
             data-field-top-res-640-value="100" data-field-top-res-480-value="76" data-field-top-res-320-value="89"
             data-field-left-value="0" data-field-left-res-960-value="0" data-field-left-res-640-value="0"
             data-field-left-res-480-value="0" data-field-left-res-320-value="0" data-field-width-value="568"
@@ -3302,11 +3559,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', en
             data-field-axisx-value="center" data-field-axisx-res-960-value="center"
             data-field-axisx-res-640-value="center" data-field-axisx-res-480-value="center"
             data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px"
-            data-field-heightunits-value="" data-field-widthunits-value="px"
-            data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-            style="top: 113px; left: 347.5px; width: 568px;">
-            <div class="tn-atom" field="tn_text_1625646150666">Все наши столы мы защищаем маслом Rubio Monocoat <span
-                style="color: rgb(134, 134, 139);">(№1 на рынке России)</span></div>
+            data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1625646150666'>Все наши столы мы защищаем маслом Rubio
+              Monocoat <span style="color: rgb(134, 134, 139);">(№1 на рынке России)</span></div>
           </div>
         </div>
       </div>
@@ -3314,419 +3569,1758 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9000000', en
           t396_init('334195950');
         });</script><!-- /T396 -->
     </div>
-    <!--Блок с маслом-->
-    <div class="t396">
-      <div class="t396__artboard rendered" data-artboard-recid="332658136" data-artboard-height="650"
-        data-artboard-height-res-640="900" data-artboard-height-res-320="1100" data-artboard-height_vh=""
-        data-artboard-valign="center" data-artboard-upscale="" data-artboard-ovrflw=""
-        data-artboard-proxy-min-offset-top="0" data-artboard-proxy-min-height="650"
-        data-artboard-proxy-max-height="650">
-        <div class="t396__carrier" data-artboard-recid="332658136"></div>
-        <div class="t396__filter" data-artboard-recid="332658136"></div>
-        <div class="t396__elem tn-elem tn-elem__3326581361625404607108" data-elem-id="1625404607108"
-          data-elem-type="image" data-field-top-value="4" data-field-top-res-960-value="64"
-          data-field-top-res-640-value="286" data-field-top-res-480-value="264" data-field-top-res-320-value="339"
-          data-field-left-value="20" data-field-left-res-960-value="20" data-field-left-res-640-value="170"
-          data-field-left-res-480-value="70" data-field-left-res-320-value="5" data-field-width-value="491"
-          data-field-width-res-960-value="361" data-field-width-res-640-value="292" data-field-width-res-480-value="319"
-          data-field-width-res-320-value="313" data-field-axisy-value="center" data-field-axisx-value="left"
-          data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px"
-          data-field-heightunits-value="" data-field-widthunits-value="px" data-field-filewidth-value="900"
-          data-field-fileheight-value="837"
-          data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="left: 51.5px; top: 100.7px; width: 491px;">
-          <div class="tn-atom"> <img class="tn-atom__img t-img loaded"
-              data-original="https://static.tildacdn.com/tild6335-6264-4336-b064-646465343063/rubio-precolor-1-tin.jpg"
-              imgfield="tn_img_1625404607108"
-              src="https://thumb.tildacdn.com/tild6335-6264-4336-b064-646465343063/-/resize/491x/-/format/webp/rubio-precolor-1-tin.jpg">
+    <div id="rec332658136" class="r t-rec" style=" " data-animationappear="off" data-record-type="396">
+      <!-- T396 -->
+      <style>
+        #rec332658136 .t396__artboard {
+          height: 650px;
+          background-color: #f6fafb;
+        }
+
+        #rec332658136 .t396__filter {
+          height: 650px;
+        }
+
+        #rec332658136 .t396__carrier {
+          height: 650px;
+          background-position: center center;
+          background-attachment: scroll;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .t396__artboard {}
+
+          #rec332658136 .t396__filter {}
+
+          #rec332658136 .t396__carrier {
+            background-attachment: scroll;
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .t396__artboard {
+            height: 900px;
+          }
+
+          #rec332658136 .t396__filter {
+            height: 900px;
+          }
+
+          #rec332658136 .t396__carrier {
+            height: 900px;
+          }
+        }
+
+        @media screen and (max-width: 639px) {}
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .t396__artboard {
+            height: 1100px;
+            background-color: #f6fafb;
+          }
+
+          #rec332658136 .t396__filter {
+            height: 1100px;
+          }
+
+          #rec332658136 .t396__carrier {
+            height: 1100px;
+            background-position: center center;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1625404607108"] {
+          z-index: 1;
+          top: calc(325px - 0px + 4px);
+          left: calc(50% - 600px + 20px);
+          width: 491px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1625404607108"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1625404607108"] {
+            top: calc(325px - 0px + 64px);
+            left: calc(50% - 480px + 20px);
+            width: 361px;
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1625404607108"] {
+            top: calc(450px - 0px + 286px);
+            left: calc(50% - 320px + 170px);
+            width: 292px;
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1625404607108"] {
+            top: calc(450px - 0px + 264px);
+            left: calc(50% - 240px + 70px);
+            width: 319px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1625404607108"] {
+            top: calc(550px - 0px + 339px);
+            left: calc(50% - 160px + 5px);
+            width: 313px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1625766116981"] {
+          color: #1d1d1f;
+          z-index: 14;
+          top: 65px;
+          left: calc(50% - 203.5px + 218px);
+          width: 407px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1625766116981"] .tn-atom {
+          color: #1d1d1f;
+          font-size: 25px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.3;
+          font-weight: 300;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1625766116981"] {
+            top: 55px;
+            left: calc(50% - 185.5px + 116px);
+            width: 371px;
+          }
+
+          #rec332658136 .tn-elem[data-elem-id="1625766116981"] .tn-atom {
+            font-size: 23px;
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1625766116981"] {
+            top: 50px;
+            left: calc(50% - 230px + -20px);
+            width: 460px;
+          }
+
+          #rec332658136 .tn-elem[data-elem-id="1625766116981"] .tn-atom {
+            font-size: 22px;
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1625766116981"] {
+            top: 55px;
+            left: calc(50% - 180.5px + -39px);
+            width: 361px;
+          }
+
+          #rec332658136 .tn-elem[data-elem-id="1625766116981"] .tn-atom {
+            font-size: 22px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1625766116981"] {
+            top: 24px;
+            left: calc(50% - 119px + -31px);
+            width: 238px;
+          }
+
+          #rec332658136 .tn-elem[data-elem-id="1625766116981"] .tn-atom {
+            font-size: 23px;
+            line-height: 1.45;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041437336"] {
+          color: #000000;
+          text-align: center;
+          z-index: 16;
+          top: 241px;
+          left: calc(50% - 600px + 616px);
+          width: 110px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041437336"] .tn-atom {
+          color: #000000;
+          font-size: 15px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041437336"] {
+            top: 241px;
+            left: calc(50% - 480px + 411px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041437336"] {
+            top: 241px;
+            left: calc(50% - 320px + 64px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041437336"] {
+            top: 223px;
+            left: calc(50% - 240px + 21px);
+            width: 93px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041437336"] {
+            top: 208px;
+            left: calc(50% - 160px + 12px);
+            width: 84px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626040885199"] {
+          z-index: 15;
+          top: calc(325px - 0px + -145px);
+          left: calc(50% + 600px - 111px + -474px);
+          width: 111px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626040885199"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626040885199"] {
+            top: calc(325px - 0px + -144px);
+            left: calc(50% + 480px - 111px + -439px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626040885199"] {
+            top: calc(450px - 0px + -266px);
+            left: calc(50% + 320px - 111px + -466px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626040885199"] {
+            top: calc(450px - 0px + -275px);
+            left: calc(50% + 240px - 94px + -366px);
+            width: 94px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626040885199"] {
+            top: calc(550px - 0px + -394px);
+            left: calc(50% + 160px - 85px + -223px);
+            width: 85px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041834589"] {
+          z-index: 17;
+          top: calc(325px - 0px + -145px);
+          left: calc(50% + 600px - 111px + -337px);
+          width: 111px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041834589"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041834589"] {
+            top: calc(325px - 0px + -144px);
+            left: calc(50% + 480px - 111px + -302px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041834589"] {
+            top: calc(450px - 0px + -266px);
+            left: calc(50% + 320px - 111px + -329px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041834589"] {
+            top: calc(450px - 0px + -275px);
+            left: calc(50% + 240px - 94px + -251px);
+            width: 94px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041834589"] {
+            top: calc(550px - 0px + -394px);
+            left: calc(50% + 160px - 85px + -120px);
+            width: 85px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041834599"] {
+          color: #000000;
+          text-align: center;
+          z-index: 18;
+          top: 241px;
+          left: calc(50% - 600px + 753px);
+          width: 110px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041834599"] .tn-atom {
+          color: #000000;
+          font-size: 15px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041834599"] {
+            top: 241px;
+            left: calc(50% - 480px + 548px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041834599"] {
+            top: 241px;
+            left: calc(50% - 320px + 201px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041834599"] {
+            top: 223px;
+            left: calc(50% - 240px + 136px);
+            width: 93px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041834599"] {
+            top: 208px;
+            left: calc(50% - 160px + 116px);
+            width: 84px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041929074"] {
+          z-index: 19;
+          top: calc(325px - 0px + -145px);
+          left: calc(50% + 600px - 111px + -200px);
+          width: 111px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041929074"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929074"] {
+            top: calc(325px - 0px + -144px);
+            left: calc(50% + 480px - 111px + -165px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929074"] {
+            top: calc(450px - 0px + -266px);
+            left: calc(50% + 320px - 111px + -192px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929074"] {
+            top: calc(450px - 0px + -275px);
+            left: calc(50% + 240px - 94px + -135px);
+            width: 94px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929074"] {
+            top: calc(550px - 0px + -394px);
+            left: calc(50% + 160px - 85px + -14px);
+            width: 85px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041929084"] {
+          color: #000000;
+          text-align: center;
+          z-index: 20;
+          top: 241px;
+          left: calc(50% - 600px + 890px);
+          width: 110px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041929084"] .tn-atom {
+          color: #000000;
+          font-size: 15px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929084"] {
+            top: 241px;
+            left: calc(50% - 480px + 685px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929084"] {
+            top: 241px;
+            left: calc(50% - 320px + 338px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929084"] {
+            top: 223px;
+            left: calc(50% - 240px + 252px);
+            width: 93px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929084"] {
+            top: 208px;
+            left: calc(50% - 160px + 221px);
+            width: 84px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041929090"] {
+          z-index: 21;
+          top: calc(325px - 0px + -145px);
+          left: calc(50% + 600px - 111px + -62px);
+          width: 111px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041929090"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929090"] {
+            top: calc(325px - 0px + -144px);
+            left: calc(50% + 480px - 111px + -27px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929090"] {
+            top: calc(450px - 0px + -266px);
+            left: calc(50% + 320px - 111px + -54px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929090"] {
+            top: calc(450px - 0px + -275px);
+            left: calc(50% + 240px - 94px + -19px);
+            width: 94px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929090"] {
+            top: calc(550px - 0px + 56px);
+            left: calc(50% + 160px - 85px + -223px);
+            width: 85px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041929098"] {
+          color: #000000;
+          text-align: center;
+          z-index: 22;
+          top: 241px;
+          left: calc(50% - 600px + 1028px);
+          width: 110px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626041929098"] .tn-atom {
+          color: #000000;
+          font-size: 15px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929098"] {
+            top: 241px;
+            left: calc(50% - 480px + 823px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929098"] {
+            top: 241px;
+            left: calc(50% - 320px + 476px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929098"] {
+            top: 223px;
+            left: calc(50% - 240px + 368px);
+            width: 93px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626041929098"] {
+            top: 663px;
+            left: calc(50% - 160px + 11px);
+            width: 84px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143850"] {
+          z-index: 23;
+          top: calc(325px - 0px + 6px);
+          left: calc(50% + 600px - 111px + -474px);
+          width: 111px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143850"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143850"] {
+            top: calc(325px - 0px + 6px);
+            left: calc(50% + 480px - 111px + -439px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143850"] {
+            top: calc(450px - 0px + -116px);
+            left: calc(50% + 320px - 111px + -466px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143850"] {
+            top: calc(450px - 0px + -148px);
+            left: calc(50% + 240px - 94px + -366px);
+            width: 94px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143850"] {
+            top: calc(550px - 0px + -235px);
+            left: calc(50% + 160px - 85px + -223px);
+            width: 85px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143861"] {
+          color: #000000;
+          text-align: center;
+          z-index: 24;
+          top: 391px;
+          left: calc(50% - 600px + 604px);
+          width: 129px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143861"] .tn-atom {
+          color: #000000;
+          font-size: 15px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143861"] {
+            top: 393px;
+            left: calc(50% - 480px + 402px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143861"] {
+            top: 393px;
+            left: calc(50% - 320px + 50px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143861"] {
+            top: 352px;
+            left: calc(50% - 240px + 13px);
+            width: 109px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143861"] {
+            top: 368px;
+            left: calc(50% - 160px + 9px);
+            width: 99px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143869"] {
+          z-index: 25;
+          top: calc(325px - 0px + 6px);
+          left: calc(50% + 600px - 111px + -337px);
+          width: 111px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143869"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143869"] {
+            top: calc(325px - 0px + 7px);
+            left: calc(50% + 480px - 111px + -302px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143869"] {
+            top: calc(450px - 0px + -115px);
+            left: calc(50% + 320px - 111px + -329px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143869"] {
+            top: calc(450px - 0px + -147px);
+            left: calc(50% + 240px - 94px + -251px);
+            width: 94px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143869"] {
+            top: calc(550px - 0px + -234px);
+            left: calc(50% + 160px - 85px + -120px);
+            width: 85px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143878"] {
+          color: #000000;
+          text-align: center;
+          z-index: 26;
+          top: 391px;
+          left: calc(50% - 600px + 753px);
+          width: 110px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143878"] .tn-atom {
+          color: #000000;
+          font-size: 15px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143878"] {
+            top: 393px;
+            left: calc(50% - 480px + 551px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143878"] {
+            top: 393px;
+            left: calc(50% - 320px + 199px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143878"] {
+            top: 352px;
+            left: calc(50% - 240px + 138px);
+            width: 93px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143878"] {
+            top: 368px;
+            left: calc(50% - 160px + 121px);
+            width: 84px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143883"] {
+          z-index: 27;
+          top: calc(325px - 0px + 6px);
+          left: calc(50% + 600px - 111px + -200px);
+          width: 111px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143883"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143883"] {
+            top: calc(325px - 0px + 7px);
+            left: calc(50% + 480px - 111px + -165px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143883"] {
+            top: calc(450px - 0px + -115px);
+            left: calc(50% + 320px - 111px + -192px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143883"] {
+            top: calc(450px - 0px + -147px);
+            left: calc(50% + 240px - 94px + -135px);
+            width: 94px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143883"] {
+            top: calc(550px - 0px + -234px);
+            left: calc(50% + 160px - 85px + -14px);
+            width: 85px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143893"] {
+          color: #000000;
+          text-align: center;
+          z-index: 28;
+          top: 390px;
+          left: calc(50% - 600px + 890px);
+          width: 110px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143893"] .tn-atom {
+          color: #000000;
+          font-size: 15px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143893"] {
+            top: 392px;
+            left: calc(50% - 480px + 688px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143893"] {
+            top: 392px;
+            left: calc(50% - 320px + 336px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143893"] {
+            top: 351px;
+            left: calc(50% - 240px + 254px);
+            width: 93px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143893"] {
+            top: 367px;
+            left: calc(50% - 160px + 227px);
+            width: 84px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143899"] {
+          z-index: 29;
+          top: calc(325px - 0px + 6px);
+          left: calc(50% + 600px - 111px + -62px);
+          width: 111px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143899"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143899"] {
+            top: calc(325px - 0px + 7px);
+            left: calc(50% + 480px - 111px + -27px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143899"] {
+            top: calc(450px - 0px + -115px);
+            left: calc(50% + 320px - 111px + -54px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143899"] {
+            top: calc(450px - 0px + -147px);
+            left: calc(50% + 240px - 94px + -19px);
+            width: 94px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143899"] {
+            top: calc(550px - 0px + 56px);
+            left: calc(50% + 160px - 85px + -117px);
+            width: 85px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143908"] {
+          color: #000000;
+          text-align: center;
+          z-index: 30;
+          top: 391px;
+          left: calc(50% - 600px + 1028px);
+          width: 110px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042143908"] .tn-atom {
+          color: #000000;
+          font-size: 15px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143908"] {
+            top: 393px;
+            left: calc(50% - 480px + 826px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143908"] {
+            top: 393px;
+            left: calc(50% - 320px + 474px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143908"] {
+            top: 352px;
+            left: calc(50% - 240px + 370px);
+            width: 93px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042143908"] {
+            top: 663px;
+            left: calc(50% - 160px + 121px);
+            width: 84px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444588"] {
+          z-index: 31;
+          top: calc(325px - 0px + 161px);
+          left: calc(50% + 600px - 111px + -476px);
+          width: 111px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444588"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444588"] {
+            top: calc(325px - 0px + 162px);
+            left: calc(50% + 480px - 111px + -441px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444588"] {
+            top: calc(450px - 0px + 40px);
+            left: calc(50% + 320px - 111px + -468px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444588"] {
+            top: calc(450px - 0px + 4px);
+            left: calc(50% + 240px - 94px + -368px);
+            width: 94px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444588"] {
+            top: calc(550px - 0px + -79px);
+            left: calc(50% + 160px - 85px + -223px);
+            width: 85px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444598"] {
+          color: #000000;
+          text-align: center;
+          z-index: 32;
+          top: 547px;
+          left: calc(50% - 600px + 614px);
+          width: 110px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444598"] .tn-atom {
+          color: #000000;
+          font-size: 15px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444598"] {
+            top: 545px;
+            left: calc(50% - 480px + 413px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444598"] {
+            top: 548px;
+            left: calc(50% - 320px + 63px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444598"] {
+            top: 507px;
+            left: calc(50% - 240px + 19px);
+            width: 93px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444598"] {
+            top: 526px;
+            left: calc(50% - 160px + 10px);
+            width: 84px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444602"] {
+          z-index: 33;
+          top: calc(325px - 0px + 161px);
+          left: calc(50% + 600px - 111px + -339px);
+          width: 111px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444602"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444602"] {
+            top: calc(325px - 0px + 162px);
+            left: calc(50% + 480px - 111px + -304px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444602"] {
+            top: calc(450px - 0px + 40px);
+            left: calc(50% + 320px - 111px + -331px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444602"] {
+            top: calc(450px - 0px + 4px);
+            left: calc(50% + 240px - 94px + -252px);
+            width: 94px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444602"] {
+            top: calc(550px - 0px + -79px);
+            left: calc(50% + 160px - 85px + -119px);
+            width: 85px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444611"] {
+          color: #000000;
+          text-align: center;
+          z-index: 34;
+          top: 547px;
+          left: calc(50% - 600px + 751px);
+          width: 110px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444611"] .tn-atom {
+          color: #000000;
+          font-size: 15px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444611"] {
+            top: 545px;
+            left: calc(50% - 480px + 550px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444611"] {
+            top: 548px;
+            left: calc(50% - 320px + 200px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444611"] {
+            top: 507px;
+            left: calc(50% - 240px + 134px);
+            width: 93px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444611"] {
+            top: 526px;
+            left: calc(50% - 160px + 114px);
+            width: 84px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444616"] {
+          z-index: 35;
+          top: calc(325px - 0px + 161px);
+          left: calc(50% + 600px - 111px + -202px);
+          width: 111px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444616"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444616"] {
+            top: calc(325px - 0px + 162px);
+            left: calc(50% + 480px - 111px + -167px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444616"] {
+            top: calc(450px - 0px + 40px);
+            left: calc(50% + 320px - 111px + -194px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444616"] {
+            top: calc(450px - 0px + 4px);
+            left: calc(50% + 240px - 94px + -137px);
+            width: 94px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444616"] {
+            top: calc(550px - 0px + -79px);
+            left: calc(50% + 160px - 85px + -14px);
+            width: 85px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444626"] {
+          color: #000000;
+          text-align: center;
+          z-index: 36;
+          top: 547px;
+          left: calc(50% - 600px + 888px);
+          width: 110px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444626"] .tn-atom {
+          color: #000000;
+          font-size: 15px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444626"] {
+            top: 545px;
+            left: calc(50% - 480px + 687px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444626"] {
+            top: 548px;
+            left: calc(50% - 320px + 337px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444626"] {
+            top: 507px;
+            left: calc(50% - 240px + 250px);
+            width: 93px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444626"] {
+            top: 526px;
+            left: calc(50% - 160px + 219px);
+            width: 84px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444630"] {
+          z-index: 37;
+          top: calc(325px - 0px + 161px);
+          left: calc(50% + 600px - 111px + -64px);
+          width: 111px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444630"] .tn-atom {
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444630"] {
+            top: calc(325px - 0px + 162px);
+            left: calc(50% + 480px - 111px + -29px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444630"] {
+            top: calc(450px - 0px + 40px);
+            left: calc(50% + 320px - 111px + -56px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444630"] {
+            top: calc(450px - 0px + 4px);
+            left: calc(50% + 240px - 94px + -20px);
+            width: 94px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444630"] {
+            top: calc(550px - 0px + 56px);
+            left: calc(50% + 160px - 85px + -14px);
+            width: 85px;
+          }
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444639"] {
+          color: #000000;
+          text-align: center;
+          z-index: 38;
+          top: 547px;
+          left: calc(50% - 600px + 1026px);
+          width: 110px;
+        }
+
+        #rec332658136 .tn-elem[data-elem-id="1626042444639"] .tn-atom {
+          color: #000000;
+          font-size: 15px;
+          font-family: 'Roboto', Arial, sans-serif;
+          line-height: 1.55;
+          font-weight: 400;
+          background-position: center center;
+          border-color: transparent;
+          border-style: solid;
+        }
+
+        @media screen and (max-width: 1199px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444639"] {
+            top: 545px;
+            left: calc(50% - 480px + 825px);
+          }
+        }
+
+        @media screen and (max-width: 959px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444639"] {
+            top: 548px;
+            left: calc(50% - 320px + 475px);
+          }
+        }
+
+        @media screen and (max-width: 639px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444639"] {
+            top: 507px;
+            left: calc(50% - 240px + 366px);
+            width: 93px;
+          }
+        }
+
+        @media screen and (max-width: 479px) {
+          #rec332658136 .tn-elem[data-elem-id="1626042444639"] {
+            top: 661px;
+            left: calc(50% - 160px + 218px);
+            width: 84px;
+          }
+        }
+      </style>
+      <div class='t396'>
+        <div class="t396__artboard" data-artboard-recid="332658136" data-artboard-height="650"
+          data-artboard-height-res-640="900" data-artboard-height-res-320="1100" data-artboard-height_vh=""
+          data-artboard-valign="center" data-artboard-upscale="" data-artboard-ovrflw="">
+          <div class="t396__carrier" data-artboard-recid="332658136"></div>
+          <div class="t396__filter" data-artboard-recid="332658136"></div>
+          <div style="background-color: #262f39;" class='t396__elem tn-elem tn-elem__3326581361625404607108'
+            data-elem-id='1625404607108' data-elem-type='image' data-field-top-value="4"
+            data-field-top-res-960-value="64" data-field-top-res-640-value="286" data-field-top-res-480-value="264"
+            data-field-top-res-320-value="339" data-field-left-value="20" data-field-left-res-960-value="20"
+            data-field-left-res-640-value="170" data-field-left-res-480-value="70" data-field-left-res-320-value="5"
+            data-field-width-value="491" data-field-width-res-960-value="361" data-field-width-res-640-value="292"
+            data-field-width-res-480-value="319" data-field-width-res-320-value="313" data-field-axisy-value="center"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+            data-field-filewidth-value="900" data-field-fileheight-value="837">
+            <div class='tn-atom'> <img class='tn-atom__img t-img'
+                data-original='https://static.tildacdn.com/tild6335-6264-4336-b064-646465343063/rubio-precolor-1-tin.jpg'
+                imgfield='tn_img_1625404607108'> </div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361625766116981' data-elem-id='1625766116981'
+            data-elem-type='text' data-field-top-value="65" data-field-top-res-960-value="55"
+            data-field-top-res-640-value="50" data-field-top-res-480-value="55" data-field-top-res-320-value="24"
+            data-field-left-value="218" data-field-left-res-960-value="116" data-field-left-res-640-value="-20"
+            data-field-left-res-480-value="-39" data-field-left-res-320-value="-31" data-field-width-value="407"
+            data-field-width-res-960-value="371" data-field-width-res-640-value="460"
+            data-field-width-res-480-value="361" data-field-width-res-320-value="238" data-field-axisy-value="top"
+            data-field-axisx-value="center" data-field-axisx-res-960-value="center"
+            data-field-axisx-res-480-value="center" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1625766116981'>Основные цвета<span style="color: rgb(252, 159, 23);">
+              </span><span style="color: rgb(255, 102, 0);">Rubio
+                Monocoat</span></div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626041437336' data-elem-id='1626041437336'
+            data-elem-type='text' data-field-top-value="241" data-field-top-res-960-value="241"
+            data-field-top-res-640-value="241" data-field-top-res-480-value="223" data-field-top-res-320-value="208"
+            data-field-left-value="616" data-field-left-res-960-value="411" data-field-left-res-640-value="64"
+            data-field-left-res-480-value="21" data-field-left-res-320-value="12" data-field-width-value="110"
+            data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1626041437336'>Black</div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626040885199' data-elem-id='1626040885199'
+            data-elem-type='image' data-field-top-value="-145" data-field-top-res-960-value="-144"
+            data-field-top-res-640-value="-266" data-field-top-res-480-value="-275" data-field-top-res-320-value="-394"
+            data-field-left-value="-474" data-field-left-res-960-value="-439" data-field-left-res-640-value="-466"
+            data-field-left-res-480-value="-366" data-field-left-res-320-value="-223" data-field-width-value="111"
+            data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
+            data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+            data-field-filewidth-value="600" data-field-fileheight-value="600">
+            <div class='tn-atom' data-zoomable="yes"
+              data-img-zoom-url="https://static.tildacdn.com/tild3562-6561-4165-b761-633064626530/Black.jpg">
+              <img class='tn-atom__img t-img'
+                data-original='https://static.tildacdn.com/tild3562-6561-4165-b761-633064626530/Black.jpg'
+                imgfield='tn_img_1626040885199'>
+            </div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626041834589' data-elem-id='1626041834589'
+            data-elem-type='image' data-field-top-value="-145" data-field-top-res-960-value="-144"
+            data-field-top-res-640-value="-266" data-field-top-res-480-value="-275" data-field-top-res-320-value="-394"
+            data-field-left-value="-337" data-field-left-res-960-value="-302" data-field-left-res-640-value="-329"
+            data-field-left-res-480-value="-251" data-field-left-res-320-value="-120" data-field-width-value="111"
+            data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
+            data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+            data-field-filewidth-value="600" data-field-fileheight-value="600">
+            <div class='tn-atom' data-zoomable="yes"
+              data-img-zoom-url="https://static.tildacdn.com/tild3663-6238-4332-a235-376564376665/Bourbone.jpg">
+              <img class='tn-atom__img t-img'
+                data-original='https://static.tildacdn.com/tild3663-6238-4332-a235-376564376665/Bourbone.jpg'
+                imgfield='tn_img_1626041834589'>
+            </div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626041834599' data-elem-id='1626041834599'
+            data-elem-type='text' data-field-top-value="241" data-field-top-res-960-value="241"
+            data-field-top-res-640-value="241" data-field-top-res-480-value="223" data-field-top-res-320-value="208"
+            data-field-left-value="753" data-field-left-res-960-value="548" data-field-left-res-640-value="201"
+            data-field-left-res-480-value="136" data-field-left-res-320-value="116" data-field-width-value="110"
+            data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1626041834599'>Bourbone</div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626041929074' data-elem-id='1626041929074'
+            data-elem-type='image' data-field-top-value="-145" data-field-top-res-960-value="-144"
+            data-field-top-res-640-value="-266" data-field-top-res-480-value="-275" data-field-top-res-320-value="-394"
+            data-field-left-value="-200" data-field-left-res-960-value="-165" data-field-left-res-640-value="-192"
+            data-field-left-res-480-value="-135" data-field-left-res-320-value="-14" data-field-width-value="111"
+            data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
+            data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+            data-field-filewidth-value="600" data-field-fileheight-value="600">
+            <div class='tn-atom' data-zoomable="yes"
+              data-img-zoom-url="https://static.tildacdn.com/tild6265-3730-4132-b739-353831346361/Castle-Brown.jpg">
+              <img class='tn-atom__img t-img'
+                data-original='https://static.tildacdn.com/tild6265-3730-4132-b739-353831346361/Castle-Brown.jpg'
+                imgfield='tn_img_1626041929074'>
+            </div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626041929084' data-elem-id='1626041929084'
+            data-elem-type='text' data-field-top-value="241" data-field-top-res-960-value="241"
+            data-field-top-res-640-value="241" data-field-top-res-480-value="223" data-field-top-res-320-value="208"
+            data-field-left-value="890" data-field-left-res-960-value="685" data-field-left-res-640-value="338"
+            data-field-left-res-480-value="252" data-field-left-res-320-value="221" data-field-width-value="110"
+            data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1626041929084'>Castle-Brown</div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626041929090' data-elem-id='1626041929090'
+            data-elem-type='image' data-field-top-value="-145" data-field-top-res-960-value="-144"
+            data-field-top-res-640-value="-266" data-field-top-res-480-value="-275" data-field-top-res-320-value="56"
+            data-field-left-value="-62" data-field-left-res-960-value="-27" data-field-left-res-640-value="-54"
+            data-field-left-res-480-value="-19" data-field-left-res-320-value="-223" data-field-width-value="111"
+            data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
+            data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+            data-field-filewidth-value="600" data-field-fileheight-value="600">
+            <div class='tn-atom' data-zoomable="yes"
+              data-img-zoom-url="https://static.tildacdn.com/tild3362-3638-4339-b437-643335303035/Chocolate.jpg">
+              <img class='tn-atom__img t-img'
+                data-original='https://static.tildacdn.com/tild3362-3638-4339-b437-643335303035/Chocolate.jpg'
+                imgfield='tn_img_1626041929090'>
+            </div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626041929098' data-elem-id='1626041929098'
+            data-elem-type='text' data-field-top-value="241" data-field-top-res-960-value="241"
+            data-field-top-res-640-value="241" data-field-top-res-480-value="223" data-field-top-res-320-value="663"
+            data-field-left-value="1028" data-field-left-res-960-value="823" data-field-left-res-640-value="476"
+            data-field-left-res-480-value="368" data-field-left-res-320-value="11" data-field-width-value="110"
+            data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1626041929098'>Chocolate</div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042143850' data-elem-id='1626042143850'
+            data-elem-type='image' data-field-top-value="6" data-field-top-res-960-value="6"
+            data-field-top-res-640-value="-116" data-field-top-res-480-value="-148" data-field-top-res-320-value="-235"
+            data-field-left-value="-474" data-field-left-res-960-value="-439" data-field-left-res-640-value="-466"
+            data-field-left-res-480-value="-366" data-field-left-res-320-value="-223" data-field-width-value="111"
+            data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
+            data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+            data-field-filewidth-value="600" data-field-fileheight-value="600">
+            <div class='tn-atom' data-zoomable="yes"
+              data-img-zoom-url="https://static.tildacdn.com/tild6332-3036-4662-b731-343363343739/Cinnamon-Brown.jpg">
+              <img class='tn-atom__img t-img'
+                data-original='https://static.tildacdn.com/tild6332-3036-4662-b731-343363343739/Cinnamon-Brown.jpg'
+                imgfield='tn_img_1626042143850'>
+            </div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042143861' data-elem-id='1626042143861'
+            data-elem-type='text' data-field-top-value="391" data-field-top-res-960-value="393"
+            data-field-top-res-640-value="393" data-field-top-res-480-value="352" data-field-top-res-320-value="368"
+            data-field-left-value="604" data-field-left-res-960-value="402" data-field-left-res-640-value="50"
+            data-field-left-res-480-value="13" data-field-left-res-320-value="9" data-field-width-value="129"
+            data-field-width-res-480-value="109" data-field-width-res-320-value="99" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1626042143861'>Cinnamon-Brown</div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042143869' data-elem-id='1626042143869'
+            data-elem-type='image' data-field-top-value="6" data-field-top-res-960-value="7"
+            data-field-top-res-640-value="-115" data-field-top-res-480-value="-147" data-field-top-res-320-value="-234"
+            data-field-left-value="-337" data-field-left-res-960-value="-302" data-field-left-res-640-value="-329"
+            data-field-left-res-480-value="-251" data-field-left-res-320-value="-120" data-field-width-value="111"
+            data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
+            data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+            data-field-filewidth-value="600" data-field-fileheight-value="600">
+            <div class='tn-atom' data-zoomable="yes"
+              data-img-zoom-url="https://static.tildacdn.com/tild3931-3933-4634-b162-303636316664/Havanna.jpg">
+              <img class='tn-atom__img t-img'
+                data-original='https://static.tildacdn.com/tild3931-3933-4634-b162-303636316664/Havanna.jpg'
+                imgfield='tn_img_1626042143869'>
+            </div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042143878' data-elem-id='1626042143878'
+            data-elem-type='text' data-field-top-value="391" data-field-top-res-960-value="393"
+            data-field-top-res-640-value="393" data-field-top-res-480-value="352" data-field-top-res-320-value="368"
+            data-field-left-value="753" data-field-left-res-960-value="551" data-field-left-res-640-value="199"
+            data-field-left-res-480-value="138" data-field-left-res-320-value="121" data-field-width-value="110"
+            data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1626042143878'>Havanna</div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042143883' data-elem-id='1626042143883'
+            data-elem-type='image' data-field-top-value="6" data-field-top-res-960-value="7"
+            data-field-top-res-640-value="-115" data-field-top-res-480-value="-147" data-field-top-res-320-value="-234"
+            data-field-left-value="-200" data-field-left-res-960-value="-165" data-field-left-res-640-value="-192"
+            data-field-left-res-480-value="-135" data-field-left-res-320-value="-14" data-field-width-value="111"
+            data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
+            data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+            data-field-filewidth-value="600" data-field-fileheight-value="600">
+            <div class='tn-atom' data-zoomable="yes"
+              data-img-zoom-url="https://static.tildacdn.com/tild6234-3562-4032-a238-653535353937/Heather-Purple.jpg">
+              <img class='tn-atom__img t-img'
+                data-original='https://static.tildacdn.com/tild6234-3562-4032-a238-653535353937/Heather-Purple.jpg'
+                imgfield='tn_img_1626042143883'>
+            </div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042143893' data-elem-id='1626042143893'
+            data-elem-type='text' data-field-top-value="390" data-field-top-res-960-value="392"
+            data-field-top-res-640-value="392" data-field-top-res-480-value="351" data-field-top-res-320-value="367"
+            data-field-left-value="890" data-field-left-res-960-value="688" data-field-left-res-640-value="336"
+            data-field-left-res-480-value="254" data-field-left-res-320-value="227" data-field-width-value="110"
+            data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1626042143893'>Heather-Purple</div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042143899' data-elem-id='1626042143899'
+            data-elem-type='image' data-field-top-value="6" data-field-top-res-960-value="7"
+            data-field-top-res-640-value="-115" data-field-top-res-480-value="-147" data-field-top-res-320-value="56"
+            data-field-left-value="-62" data-field-left-res-960-value="-27" data-field-left-res-640-value="-54"
+            data-field-left-res-480-value="-19" data-field-left-res-320-value="-117" data-field-width-value="111"
+            data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
+            data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+            data-field-filewidth-value="600" data-field-fileheight-value="600">
+            <div class='tn-atom' data-zoomable="yes"
+              data-img-zoom-url="https://static.tildacdn.com/tild3232-3431-4130-a365-323037333363/Mahogane.jpg">
+              <img class='tn-atom__img t-img'
+                data-original='https://static.tildacdn.com/tild3232-3431-4130-a365-323037333363/Mahogane.jpg'
+                imgfield='tn_img_1626042143899'>
+            </div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042143908' data-elem-id='1626042143908'
+            data-elem-type='text' data-field-top-value="391" data-field-top-res-960-value="393"
+            data-field-top-res-640-value="393" data-field-top-res-480-value="352" data-field-top-res-320-value="663"
+            data-field-left-value="1028" data-field-left-res-960-value="826" data-field-left-res-640-value="474"
+            data-field-left-res-480-value="370" data-field-left-res-320-value="121" data-field-width-value="110"
+            data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1626042143908'>Mahogane</div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042444588' data-elem-id='1626042444588'
+            data-elem-type='image' data-field-top-value="161" data-field-top-res-960-value="162"
+            data-field-top-res-640-value="40" data-field-top-res-480-value="4" data-field-top-res-320-value="-79"
+            data-field-left-value="-476" data-field-left-res-960-value="-441" data-field-left-res-640-value="-468"
+            data-field-left-res-480-value="-368" data-field-left-res-320-value="-223" data-field-width-value="111"
+            data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
+            data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+            data-field-filewidth-value="600" data-field-fileheight-value="600">
+            <div class='tn-atom' data-zoomable="yes"
+              data-img-zoom-url="https://static.tildacdn.com/tild6563-6139-4331-b863-333831663730/Mist.jpg">
+              <img class='tn-atom__img t-img'
+                data-original='https://static.tildacdn.com/tild6563-6139-4331-b863-333831663730/Mist.jpg'
+                imgfield='tn_img_1626042444588'>
+            </div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042444598' data-elem-id='1626042444598'
+            data-elem-type='text' data-field-top-value="547" data-field-top-res-960-value="545"
+            data-field-top-res-640-value="548" data-field-top-res-480-value="507" data-field-top-res-320-value="526"
+            data-field-left-value="614" data-field-left-res-960-value="413" data-field-left-res-640-value="63"
+            data-field-left-res-480-value="19" data-field-left-res-320-value="10" data-field-width-value="110"
+            data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1626042444598'>Mist</div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042444602' data-elem-id='1626042444602'
+            data-elem-type='image' data-field-top-value="161" data-field-top-res-960-value="162"
+            data-field-top-res-640-value="40" data-field-top-res-480-value="4" data-field-top-res-320-value="-79"
+            data-field-left-value="-339" data-field-left-res-960-value="-304" data-field-left-res-640-value="-331"
+            data-field-left-res-480-value="-252" data-field-left-res-320-value="-119" data-field-width-value="111"
+            data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
+            data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+            data-field-filewidth-value="600" data-field-fileheight-value="600">
+            <div class='tn-atom' data-zoomable="yes"
+              data-img-zoom-url="https://static.tildacdn.com/tild6637-3966-4461-b132-663832623339/Pine.jpg">
+              <img class='tn-atom__img t-img'
+                data-original='https://static.tildacdn.com/tild6637-3966-4461-b132-663832623339/Pine.jpg'
+                imgfield='tn_img_1626042444602'>
+            </div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042444611' data-elem-id='1626042444611'
+            data-elem-type='text' data-field-top-value="547" data-field-top-res-960-value="545"
+            data-field-top-res-640-value="548" data-field-top-res-480-value="507" data-field-top-res-320-value="526"
+            data-field-left-value="751" data-field-left-res-960-value="550" data-field-left-res-640-value="200"
+            data-field-left-res-480-value="134" data-field-left-res-320-value="114" data-field-width-value="110"
+            data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1626042444611'>Pine</div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042444616' data-elem-id='1626042444616'
+            data-elem-type='image' data-field-top-value="161" data-field-top-res-960-value="162"
+            data-field-top-res-640-value="40" data-field-top-res-480-value="4" data-field-top-res-320-value="-79"
+            data-field-left-value="-202" data-field-left-res-960-value="-167" data-field-left-res-640-value="-194"
+            data-field-left-res-480-value="-137" data-field-left-res-320-value="-14" data-field-width-value="111"
+            data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
+            data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+            data-field-filewidth-value="600" data-field-fileheight-value="600">
+            <div class='tn-atom' data-zoomable="yes"
+              data-img-zoom-url="https://static.tildacdn.com/tild6131-6264-4164-b236-643132666166/Pure.jpg">
+              <img class='tn-atom__img t-img'
+                data-original='https://static.tildacdn.com/tild6131-6264-4164-b236-643132666166/Pure.jpg'
+                imgfield='tn_img_1626042444616'>
+            </div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042444626' data-elem-id='1626042444626'
+            data-elem-type='text' data-field-top-value="547" data-field-top-res-960-value="545"
+            data-field-top-res-640-value="548" data-field-top-res-480-value="507" data-field-top-res-320-value="526"
+            data-field-left-value="888" data-field-left-res-960-value="687" data-field-left-res-640-value="337"
+            data-field-left-res-480-value="250" data-field-left-res-320-value="219" data-field-width-value="110"
+            data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1626042444626'>Pure</div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042444630' data-elem-id='1626042444630'
+            data-elem-type='image' data-field-top-value="161" data-field-top-res-960-value="162"
+            data-field-top-res-640-value="40" data-field-top-res-480-value="4" data-field-top-res-320-value="56"
+            data-field-left-value="-64" data-field-left-res-960-value="-29" data-field-left-res-640-value="-56"
+            data-field-left-res-480-value="-20" data-field-left-res-320-value="-14" data-field-width-value="111"
+            data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
+            data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
+            data-field-filewidth-value="600" data-field-fileheight-value="600">
+            <div class='tn-atom' data-zoomable="yes"
+              data-img-zoom-url="https://static.tildacdn.com/tild3334-6538-4037-b362-663138393031/Rusty-Brown.jpg">
+              <img class='tn-atom__img t-img'
+                data-original='https://static.tildacdn.com/tild3334-6538-4037-b362-663138393031/Rusty-Brown.jpg'
+                imgfield='tn_img_1626042444630'>
+            </div>
+          </div>
+          <div class='t396__elem tn-elem tn-elem__3326581361626042444639' data-elem-id='1626042444639'
+            data-elem-type='text' data-field-top-value="547" data-field-top-res-960-value="545"
+            data-field-top-res-640-value="548" data-field-top-res-480-value="507" data-field-top-res-320-value="661"
+            data-field-left-value="1026" data-field-left-res-960-value="825" data-field-left-res-640-value="475"
+            data-field-left-res-480-value="366" data-field-left-res-320-value="218" data-field-width-value="110"
+            data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
+            data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
+            data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px">
+            <div class='tn-atom' field='tn_text_1626042444639'>Rusty-Brown</div>
           </div>
         </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361625766116981" data-elem-id="1625766116981"
-          data-elem-type="text" data-field-top-value="65" data-field-top-res-960-value="55"
-          data-field-top-res-640-value="50" data-field-top-res-480-value="55" data-field-top-res-320-value="24"
-          data-field-left-value="218" data-field-left-res-960-value="116" data-field-left-res-640-value="-20"
-          data-field-left-res-480-value="-39" data-field-left-res-320-value="-31" data-field-width-value="407"
-          data-field-width-res-960-value="371" data-field-width-res-640-value="460" data-field-width-res-480-value="361"
-          data-field-width-res-320-value="238" data-field-axisy-value="top" data-field-axisx-value="center"
-          data-field-axisx-res-960-value="center" data-field-axisx-res-480-value="center"
-          data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px"
-          data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="top: 65px; left: 646px; width: 407px;">
-          <div class="tn-atom" field="tn_text_1625766116981">Основные цвета<span style="color: rgb(252, 159, 23);">
-            </span><span style="color: rgb(255, 102, 0);">Rubio Monocoat</span></div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626041437336" data-elem-id="1626041437336"
-          data-elem-type="text" data-field-top-value="241" data-field-top-res-960-value="241"
-          data-field-top-res-640-value="241" data-field-top-res-480-value="223" data-field-top-res-320-value="208"
-          data-field-left-value="616" data-field-left-res-960-value="411" data-field-left-res-640-value="64"
-          data-field-left-res-480-value="21" data-field-left-res-320-value="12" data-field-width-value="110"
-          data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
-          data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="top: 241px; left: 647.5px; width: 110px;">
-          <div class="tn-atom" field="tn_text_1626041437336">Black</div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626040885199" data-elem-id="1626040885199"
-          data-elem-type="image" data-field-top-value="-145" data-field-top-res-960-value="-144"
-          data-field-top-res-640-value="-266" data-field-top-res-480-value="-275" data-field-top-res-320-value="-394"
-          data-field-left-value="-474" data-field-left-res-960-value="-439" data-field-left-res-640-value="-466"
-          data-field-left-res-480-value="-366" data-field-left-res-320-value="-223" data-field-width-value="111"
-          data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
-          data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-field-filewidth-value="600" data-field-fileheight-value="600"
-          data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="left: 646.5px; top: 124.5px; width: 111px;">
-          <div class="tn-atom t-zoomable" data-zoomable="yes"
-            data-img-zoom-url="https://static.tildacdn.com/tild3562-6561-4165-b761-633064626530/Black.jpg"> <img
-              class="tn-atom__img t-img loaded"
-              data-original="https://static.tildacdn.com/tild3562-6561-4165-b761-633064626530/Black.jpg"
-              imgfield="tn_img_1626040885199"
-              src="https://thumb.tildacdn.com/tild3562-6561-4165-b761-633064626530/-/resize/111x/-/format/webp/Black.jpg">
+      </div>
+      <script>$(document).ready(function () {
+          t396_init('332658136');
+        });</script><!-- /T396 -->
+    </div>
+    <!--Кто мы?-->
+    <div style="text-align: center;">
+      <div class="t015__title t-title t-title_lg" field="title" style="font-size:52px;">Кто мы?</div>
+    </div>
+    <div class="t754" data-show-count="">
+      <div class="t754__parent mobile-two-columns t754__container_mobile-grid">
+        <div class="t754__col t-col t-col_3 t-align_left t-item t754__col_mobile-grid js-product"
+          data-product-lid="1497456130776">
+          <div class="t754__content">
+            <div class="t754__imgwrapper t1002__picture-wrapper " style="padding-bottom:134.61538461538%;">
+              <div class="t754__bgimg t-bgimg js-product-img" data-original="images/ceh.jpg"
+                style="background-image: url(images/ceh.jpg)" data-lazy-rule="comm:resize"></div>
+            </div>
+            <div class="t754__textwrapper">
+              <div class="t754__title t-name t-name_xs js-product-name" data-auto-correct-font-size="rem"
+                field="li_title__1497456130776" style="font-size:22px;font-weight:700;font-family:'Roboto';"> Цех №1
+              </div>
+            </div>
           </div>
         </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626041834589" data-elem-id="1626041834589"
-          data-elem-type="image" data-field-top-value="-145" data-field-top-res-960-value="-144"
-          data-field-top-res-640-value="-266" data-field-top-res-480-value="-275" data-field-top-res-320-value="-394"
-          data-field-left-value="-337" data-field-left-res-960-value="-302" data-field-left-res-640-value="-329"
-          data-field-left-res-480-value="-251" data-field-left-res-320-value="-120" data-field-width-value="111"
-          data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
-          data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-field-filewidth-value="600" data-field-fileheight-value="600"
-          data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="left: 783.5px; top: 124.5px; width: 111px;">
-          <div class="tn-atom t-zoomable" data-zoomable="yes"
-            data-img-zoom-url="https://static.tildacdn.com/tild3663-6238-4332-a235-376564376665/Bourbone.jpg"> <img
-              class="tn-atom__img t-img loaded"
-              data-original="https://static.tildacdn.com/tild3663-6238-4332-a235-376564376665/Bourbone.jpg"
-              imgfield="tn_img_1626041834589"
-              src="https://thumb.tildacdn.com/tild3663-6238-4332-a235-376564376665/-/resize/111x/-/format/webp/Bourbone.jpg">
+        <div class="t754__col t-col t-col_3 t-align_left t-item t754__col_mobile-grid js-product"
+          data-product-lid="1626262153193">
+          <div class="t754__content">
+            <div class="t754__imgwrapper t1002__picture-wrapper " style="padding-bottom:134.61538461538%;">
+              <div class="t754__bgimg t-bgimg js-product-img" data-original="images/ceh.jpg"
+                style="background-image: url(images/ceh.jpg);" data-lazy-rule="comm:resize"></div>
+            </div>
+            <div class="t754__textwrapper">
+              <div class="t754__title t-name t-name_xs js-product-name" data-auto-correct-font-size="rem"
+                field="li_title__1626262153193" style="font-size:22px;font-weight:700;font-family:'Roboto';"> Цех №2
+              </div>
+            </div>
           </div>
         </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626041834599" data-elem-id="1626041834599"
-          data-elem-type="text" data-field-top-value="241" data-field-top-res-960-value="241"
-          data-field-top-res-640-value="241" data-field-top-res-480-value="223" data-field-top-res-320-value="208"
-          data-field-left-value="753" data-field-left-res-960-value="548" data-field-left-res-640-value="201"
-          data-field-left-res-480-value="136" data-field-left-res-320-value="116" data-field-width-value="110"
-          data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
-          data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="top: 241px; left: 784.5px; width: 110px;">
-          <div class="tn-atom" field="tn_text_1626041834599">Bourbone</div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626041929074" data-elem-id="1626041929074"
-          data-elem-type="image" data-field-top-value="-145" data-field-top-res-960-value="-144"
-          data-field-top-res-640-value="-266" data-field-top-res-480-value="-275" data-field-top-res-320-value="-394"
-          data-field-left-value="-200" data-field-left-res-960-value="-165" data-field-left-res-640-value="-192"
-          data-field-left-res-480-value="-135" data-field-left-res-320-value="-14" data-field-width-value="111"
-          data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
-          data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-field-filewidth-value="600" data-field-fileheight-value="600"
-          data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="left: 920.5px; top: 124.5px; width: 111px;">
-          <div class="tn-atom t-zoomable" data-zoomable="yes"
-            data-img-zoom-url="https://static.tildacdn.com/tild6265-3730-4132-b739-353831346361/Castle-Brown.jpg"> <img
-              class="tn-atom__img t-img loaded"
-              data-original="https://static.tildacdn.com/tild6265-3730-4132-b739-353831346361/Castle-Brown.jpg"
-              imgfield="tn_img_1626041929074"
-              src="https://thumb.tildacdn.com/tild6265-3730-4132-b739-353831346361/-/resize/111x/-/format/webp/Castle-Brown.jpg">
+        <div class="t754__col t-col t-col_3 t-align_left t-item t754__col_mobile-grid js-product"
+          data-product-lid="1626262229520">
+          <div class="t754__content">
+            <div class="t754__imgwrapper t1002__picture-wrapper " style="padding-bottom:134.61538461538%;">
+              <div class="t754__bgimg t-bgimg js-product-img" data-original="images/ceh.jpg"
+                style="background-image: url(images/ceh.jpg);" data-lazy-rule="comm:resize"></div>
+            </div>
+            <div class="t754__textwrapper">
+              <div class="t754__title t-name t-name_xs js-product-name" data-auto-correct-font-size="rem"
+                field="li_title__1626262229520" style="font-size:22px;font-weight:700;font-family:'Roboto';"> Цех №3
+              </div>
+            </div>
           </div>
         </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626041929084" data-elem-id="1626041929084"
-          data-elem-type="text" data-field-top-value="241" data-field-top-res-960-value="241"
-          data-field-top-res-640-value="241" data-field-top-res-480-value="223" data-field-top-res-320-value="208"
-          data-field-left-value="890" data-field-left-res-960-value="685" data-field-left-res-640-value="338"
-          data-field-left-res-480-value="252" data-field-left-res-320-value="221" data-field-width-value="110"
-          data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
-          data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="top: 241px; left: 921.5px; width: 110px;">
-          <div class="tn-atom" field="tn_text_1626041929084">Castle-Brown</div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626041929090" data-elem-id="1626041929090"
-          data-elem-type="image" data-field-top-value="-145" data-field-top-res-960-value="-144"
-          data-field-top-res-640-value="-266" data-field-top-res-480-value="-275" data-field-top-res-320-value="56"
-          data-field-left-value="-62" data-field-left-res-960-value="-27" data-field-left-res-640-value="-54"
-          data-field-left-res-480-value="-19" data-field-left-res-320-value="-223" data-field-width-value="111"
-          data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
-          data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-field-filewidth-value="600" data-field-fileheight-value="600"
-          data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="left: 1058.5px; top: 124.5px; width: 111px;">
-          <div class="tn-atom t-zoomable" data-zoomable="yes"
-            data-img-zoom-url="https://static.tildacdn.com/tild3362-3638-4339-b437-643335303035/Chocolate.jpg"> <img
-              class="tn-atom__img t-img loaded"
-              data-original="https://static.tildacdn.com/tild3362-3638-4339-b437-643335303035/Chocolate.jpg"
-              imgfield="tn_img_1626041929090"
-              src="https://thumb.tildacdn.com/tild3362-3638-4339-b437-643335303035/-/resize/111x/-/format/webp/Chocolate.jpg">
+        <div class="t754__col t-col t-col_3 t-align_left t-item t754__col_mobile-grid js-product"
+          data-product-lid="1626262277211">
+          <div class="t754__content">
+            <div class="t754__imgwrapper t1002__picture-wrapper " style="padding-bottom:134.61538461538%;">
+              <div class="t754__bgimg t-bgimg js-product-img" data-original="images/ceh.jpg"
+                style="background-image: url(images/ceh.jpg);" data-lazy-rule="comm:resize"></div>
+            </div>
+            <div class="t754__textwrapper">
+              <div class="t754__title t-name t-name_xs js-product-name" data-auto-correct-font-size="rem"
+                field="li_title__1626262277211" style="font-size:22px;font-weight:700;font-family:'Roboto';"> Цех №4
+              </div>
+            </div>
           </div>
         </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626041929098" data-elem-id="1626041929098"
-          data-elem-type="text" data-field-top-value="241" data-field-top-res-960-value="241"
-          data-field-top-res-640-value="241" data-field-top-res-480-value="223" data-field-top-res-320-value="663"
-          data-field-left-value="1028" data-field-left-res-960-value="823" data-field-left-res-640-value="476"
-          data-field-left-res-480-value="368" data-field-left-res-320-value="11" data-field-width-value="110"
-          data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
-          data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="top: 241px; left: 1059.5px; width: 110px;">
-          <div class="tn-atom" field="tn_text_1626041929098">Chocolate</div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042143850" data-elem-id="1626042143850"
-          data-elem-type="image" data-field-top-value="6" data-field-top-res-960-value="6"
-          data-field-top-res-640-value="-116" data-field-top-res-480-value="-148" data-field-top-res-320-value="-235"
-          data-field-left-value="-474" data-field-left-res-960-value="-439" data-field-left-res-640-value="-466"
-          data-field-left-res-480-value="-366" data-field-left-res-320-value="-223" data-field-width-value="111"
-          data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
-          data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-field-filewidth-value="600" data-field-fileheight-value="600"
-          data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="left: 646.5px; top: 275.5px; width: 111px;">
-          <div class="tn-atom t-zoomable" data-zoomable="yes"
-            data-img-zoom-url="https://static.tildacdn.com/tild6332-3036-4662-b731-343363343739/Cinnamon-Brown.jpg">
-            <img class="tn-atom__img t-img loaded"
-              data-original="https://static.tildacdn.com/tild6332-3036-4662-b731-343363343739/Cinnamon-Brown.jpg"
-              imgfield="tn_img_1626042143850"
-              src="https://thumb.tildacdn.com/tild6332-3036-4662-b731-343363343739/-/resize/111x/-/format/webp/Cinnamon-Brown.jpg">
+      </div>
+      <!--Текст-->
+      <div id="rec460672958" class="r t-rec t-rec_pt_45 t-rec_pb_45 r_anim r_showed"
+        style="padding-top:45px;padding-bottom:45px; background-color: white;" data-record-type="127">
+        <!-- T119 -->
+        <div class="t119">
+          <div class="t-container ">
+            <div class="t119__preface t-descr" style="opacity:0.70; font-size: 30px" field="text">16 июля 2022
+              состоялось открытие
+              нашего
+              шоурума по адресу г. Воронеж, Ленинский проспект 156в, "ТЦ и ОДМ"<br><br>Мы подготовили уникальную
+              выставку,
+              которая включает топовые позиции от нашего производителя.<br><br>Основные принципы нашей работы:
+              качественное
+              производство изделий с максимально точным подходом к каждому нашему заказчику</div>
           </div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042143861" data-elem-id="1626042143861"
-          data-elem-type="text" data-field-top-value="391" data-field-top-res-960-value="393"
-          data-field-top-res-640-value="393" data-field-top-res-480-value="352" data-field-top-res-320-value="368"
-          data-field-left-value="604" data-field-left-res-960-value="402" data-field-left-res-640-value="50"
-          data-field-left-res-480-value="13" data-field-left-res-320-value="9" data-field-width-value="129"
-          data-field-width-res-480-value="109" data-field-width-res-320-value="99" data-field-axisy-value="top"
-          data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="top: 391px; left: 635.5px; width: 129px;">
-          <div class="tn-atom" field="tn_text_1626042143861">Cinnamon-Brown</div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042143869" data-elem-id="1626042143869"
-          data-elem-type="image" data-field-top-value="6" data-field-top-res-960-value="7"
-          data-field-top-res-640-value="-115" data-field-top-res-480-value="-147" data-field-top-res-320-value="-234"
-          data-field-left-value="-337" data-field-left-res-960-value="-302" data-field-left-res-640-value="-329"
-          data-field-left-res-480-value="-251" data-field-left-res-320-value="-120" data-field-width-value="111"
-          data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
-          data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-field-filewidth-value="600" data-field-fileheight-value="600"
-          data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="left: 783.5px; top: 275.5px; width: 111px;">
-          <div class="tn-atom t-zoomable" data-zoomable="yes"
-            data-img-zoom-url="https://static.tildacdn.com/tild3931-3933-4634-b162-303636316664/Havanna.jpg"> <img
-              class="tn-atom__img t-img loaded"
-              data-original="https://static.tildacdn.com/tild3931-3933-4634-b162-303636316664/Havanna.jpg"
-              imgfield="tn_img_1626042143869"
-              src="https://thumb.tildacdn.com/tild3931-3933-4634-b162-303636316664/-/resize/111x/-/format/webp/Havanna.jpg">
+          <div style="margin-top:40px;">
+            <div class="t754__col t-col t-col_3 t-align_center t-item t754__col_mobile-grid js-product"
+              data-product-lid="1626262153193" style="margin-left: 30%;">
+              <div class="t754__content">
+                <div class="t754__imgwrapper t1002__picture-wrapper "
+                  style="padding-bottom:134.61538461538%; text-align:center;">
+                  <div class="t754__bgimg t-bgimg js-product-img" data-original="images/ceh.jpg"
+                    style="background-image: url(images/ceh.jpg);" data-lazy-rule="comm:resize"></div>
+                </div>
+                <div class="t754__textwrapper">
+                  <div class="t754__title t-name t-name_xs js-product-name" data-auto-correct-font-size="rem"
+                    field="li_title__1626262153193" style="font-size:22px;font-weight:700;font-family:'Roboto';"> Цех №2
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="t754__col t-col t-col_3 t-align_center t-item t754__col_mobile-grid js-product"
+              data-product-lid="1626262229520">
+              <div class="t754__content">
+                <div class="t754__imgwrapper t1002__picture-wrapper " style="padding-bottom:134.61538461538%;">
+                  <div class="t754__bgimg t-bgimg js-product-img" data-original="images/ceh.jpg"
+                    style="background-image: url(images/ceh.jpg);" data-lazy-rule="comm:resize"></div>
+                </div>
+                <div class="t754__textwrapper">
+                  <div class="t754__title t-name t-name_xs js-product-name" data-auto-correct-font-size="rem"
+                    field="li_title__1626262229520" style="font-size:22px;font-weight:700;font-family:'Roboto';"> Цех №3
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042143878" data-elem-id="1626042143878"
-          data-elem-type="text" data-field-top-value="391" data-field-top-res-960-value="393"
-          data-field-top-res-640-value="393" data-field-top-res-480-value="352" data-field-top-res-320-value="368"
-          data-field-left-value="753" data-field-left-res-960-value="551" data-field-left-res-640-value="199"
-          data-field-left-res-480-value="138" data-field-left-res-320-value="121" data-field-width-value="110"
-          data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
-          data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="top: 391px; left: 784.5px; width: 110px;">
-          <div class="tn-atom" field="tn_text_1626042143878">Havanna</div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042143883" data-elem-id="1626042143883"
-          data-elem-type="image" data-field-top-value="6" data-field-top-res-960-value="7"
-          data-field-top-res-640-value="-115" data-field-top-res-480-value="-147" data-field-top-res-320-value="-234"
-          data-field-left-value="-200" data-field-left-res-960-value="-165" data-field-left-res-640-value="-192"
-          data-field-left-res-480-value="-135" data-field-left-res-320-value="-14" data-field-width-value="111"
-          data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
-          data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-field-filewidth-value="600" data-field-fileheight-value="600"
-          data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="left: 920.5px; top: 275.5px; width: 111px;">
-          <div class="tn-atom t-zoomable" data-zoomable="yes"
-            data-img-zoom-url="https://static.tildacdn.com/tild6234-3562-4032-a238-653535353937/Heather-Purple.jpg">
-            <img class="tn-atom__img t-img loaded"
-              data-original="https://static.tildacdn.com/tild6234-3562-4032-a238-653535353937/Heather-Purple.jpg"
-              imgfield="tn_img_1626042143883"
-              src="https://thumb.tildacdn.com/tild6234-3562-4032-a238-653535353937/-/resize/111x/-/format/webp/Heather-Purple.jpg">
-          </div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042143893" data-elem-id="1626042143893"
-          data-elem-type="text" data-field-top-value="390" data-field-top-res-960-value="392"
-          data-field-top-res-640-value="392" data-field-top-res-480-value="351" data-field-top-res-320-value="367"
-          data-field-left-value="890" data-field-left-res-960-value="688" data-field-left-res-640-value="336"
-          data-field-left-res-480-value="254" data-field-left-res-320-value="227" data-field-width-value="110"
-          data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
-          data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="top: 390px; left: 921.5px; width: 110px;">
-          <div class="tn-atom" field="tn_text_1626042143893">Heather-Purple</div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042143899" data-elem-id="1626042143899"
-          data-elem-type="image" data-field-top-value="6" data-field-top-res-960-value="7"
-          data-field-top-res-640-value="-115" data-field-top-res-480-value="-147" data-field-top-res-320-value="56"
-          data-field-left-value="-62" data-field-left-res-960-value="-27" data-field-left-res-640-value="-54"
-          data-field-left-res-480-value="-19" data-field-left-res-320-value="-117" data-field-width-value="111"
-          data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
-          data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-field-filewidth-value="600" data-field-fileheight-value="600"
-          data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="left: 1058.5px; top: 275.5px; width: 111px;">
-          <div class="tn-atom t-zoomable" data-zoomable="yes"
-            data-img-zoom-url="https://static.tildacdn.com/tild3232-3431-4130-a365-323037333363/Mahogane.jpg"> <img
-              class="tn-atom__img t-img loaded"
-              data-original="https://static.tildacdn.com/tild3232-3431-4130-a365-323037333363/Mahogane.jpg"
-              imgfield="tn_img_1626042143899"
-              src="https://thumb.tildacdn.com/tild3232-3431-4130-a365-323037333363/-/resize/111x/-/format/webp/Mahogane.jpg">
-          </div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042143908" data-elem-id="1626042143908"
-          data-elem-type="text" data-field-top-value="391" data-field-top-res-960-value="393"
-          data-field-top-res-640-value="393" data-field-top-res-480-value="352" data-field-top-res-320-value="663"
-          data-field-left-value="1028" data-field-left-res-960-value="826" data-field-left-res-640-value="474"
-          data-field-left-res-480-value="370" data-field-left-res-320-value="121" data-field-width-value="110"
-          data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
-          data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="top: 391px; left: 1059.5px; width: 110px;">
-          <div class="tn-atom" field="tn_text_1626042143908">Mahogane</div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042444588" data-elem-id="1626042444588"
-          data-elem-type="image" data-field-top-value="161" data-field-top-res-960-value="162"
-          data-field-top-res-640-value="40" data-field-top-res-480-value="4" data-field-top-res-320-value="-79"
-          data-field-left-value="-476" data-field-left-res-960-value="-441" data-field-left-res-640-value="-468"
-          data-field-left-res-480-value="-368" data-field-left-res-320-value="-223" data-field-width-value="111"
-          data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
-          data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-field-filewidth-value="600" data-field-fileheight-value="600"
-          data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="left: 644.5px; top: 430.5px; width: 111px;">
-          <div class="tn-atom t-zoomable" data-zoomable="yes"
-            data-img-zoom-url="https://static.tildacdn.com/tild6563-6139-4331-b863-333831663730/Mist.jpg"> <img
-              class="tn-atom__img t-img loaded"
-              data-original="https://static.tildacdn.com/tild6563-6139-4331-b863-333831663730/Mist.jpg"
-              imgfield="tn_img_1626042444588"
-              src="https://thumb.tildacdn.com/tild6563-6139-4331-b863-333831663730/-/resize/111x/-/format/webp/Mist.jpg">
-          </div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042444598" data-elem-id="1626042444598"
-          data-elem-type="text" data-field-top-value="547" data-field-top-res-960-value="545"
-          data-field-top-res-640-value="548" data-field-top-res-480-value="507" data-field-top-res-320-value="526"
-          data-field-left-value="614" data-field-left-res-960-value="413" data-field-left-res-640-value="63"
-          data-field-left-res-480-value="19" data-field-left-res-320-value="10" data-field-width-value="110"
-          data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
-          data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="top: 547px; left: 645.5px; width: 110px;">
-          <div class="tn-atom" field="tn_text_1626042444598">Mist</div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042444602" data-elem-id="1626042444602"
-          data-elem-type="image" data-field-top-value="161" data-field-top-res-960-value="162"
-          data-field-top-res-640-value="40" data-field-top-res-480-value="4" data-field-top-res-320-value="-79"
-          data-field-left-value="-339" data-field-left-res-960-value="-304" data-field-left-res-640-value="-331"
-          data-field-left-res-480-value="-252" data-field-left-res-320-value="-119" data-field-width-value="111"
-          data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
-          data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-field-filewidth-value="600" data-field-fileheight-value="600"
-          data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="left: 781.5px; top: 430.5px; width: 111px;">
-          <div class="tn-atom t-zoomable" data-zoomable="yes"
-            data-img-zoom-url="https://static.tildacdn.com/tild6637-3966-4461-b132-663832623339/Pine.jpg"> <img
-              class="tn-atom__img t-img loaded"
-              data-original="https://static.tildacdn.com/tild6637-3966-4461-b132-663832623339/Pine.jpg"
-              imgfield="tn_img_1626042444602"
-              src="https://thumb.tildacdn.com/tild6637-3966-4461-b132-663832623339/-/resize/111x/-/format/webp/Pine.jpg">
-          </div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042444611" data-elem-id="1626042444611"
-          data-elem-type="text" data-field-top-value="547" data-field-top-res-960-value="545"
-          data-field-top-res-640-value="548" data-field-top-res-480-value="507" data-field-top-res-320-value="526"
-          data-field-left-value="751" data-field-left-res-960-value="550" data-field-left-res-640-value="200"
-          data-field-left-res-480-value="134" data-field-left-res-320-value="114" data-field-width-value="110"
-          data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
-          data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="top: 547px; left: 782.5px; width: 110px;">
-          <div class="tn-atom" field="tn_text_1626042444611">Pine</div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042444616" data-elem-id="1626042444616"
-          data-elem-type="image" data-field-top-value="161" data-field-top-res-960-value="162"
-          data-field-top-res-640-value="40" data-field-top-res-480-value="4" data-field-top-res-320-value="-79"
-          data-field-left-value="-202" data-field-left-res-960-value="-167" data-field-left-res-640-value="-194"
-          data-field-left-res-480-value="-137" data-field-left-res-320-value="-14" data-field-width-value="111"
-          data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
-          data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-field-filewidth-value="600" data-field-fileheight-value="600"
-          data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="left: 918.5px; top: 430.5px; width: 111px;">
-          <div class="tn-atom t-zoomable" data-zoomable="yes"
-            data-img-zoom-url="https://static.tildacdn.com/tild6131-6264-4164-b236-643132666166/Pure.jpg"> <img
-              class="tn-atom__img t-img loaded"
-              data-original="https://static.tildacdn.com/tild6131-6264-4164-b236-643132666166/Pure.jpg"
-              imgfield="tn_img_1626042444616"
-              src="https://thumb.tildacdn.com/tild6131-6264-4164-b236-643132666166/-/resize/111x/-/format/webp/Pure.jpg">
-          </div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042444626" data-elem-id="1626042444626"
-          data-elem-type="text" data-field-top-value="547" data-field-top-res-960-value="545"
-          data-field-top-res-640-value="548" data-field-top-res-480-value="507" data-field-top-res-320-value="526"
-          data-field-left-value="888" data-field-left-res-960-value="687" data-field-left-res-640-value="337"
-          data-field-left-res-480-value="250" data-field-left-res-320-value="219" data-field-width-value="110"
-          data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
-          data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="top: 547px; left: 919.5px; width: 110px;">
-          <div class="tn-atom" field="tn_text_1626042444626">Pure</div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042444630" data-elem-id="1626042444630"
-          data-elem-type="image" data-field-top-value="161" data-field-top-res-960-value="162"
-          data-field-top-res-640-value="40" data-field-top-res-480-value="4" data-field-top-res-320-value="56"
-          data-field-left-value="-64" data-field-left-res-960-value="-29" data-field-left-res-640-value="-56"
-          data-field-left-res-480-value="-20" data-field-left-res-320-value="-14" data-field-width-value="111"
-          data-field-width-res-480-value="94" data-field-width-res-320-value="85" data-field-axisy-value="center"
-          data-field-axisx-value="right" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-field-filewidth-value="600" data-field-fileheight-value="600"
-          data-fields="img,width,filewidth,fileheight,top,left,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="left: 1056.5px; top: 430.5px; width: 111px;">
-          <div class="tn-atom t-zoomable" data-zoomable="yes"
-            data-img-zoom-url="https://static.tildacdn.com/tild3334-6538-4037-b362-663138393031/Rusty-Brown.jpg"> <img
-              class="tn-atom__img t-img loaded"
-              data-original="https://static.tildacdn.com/tild3334-6538-4037-b362-663138393031/Rusty-Brown.jpg"
-              imgfield="tn_img_1626042444630"
-              src="https://thumb.tildacdn.com/tild3334-6538-4037-b362-663138393031/-/resize/111x/-/format/webp/Rusty-Brown.jpg">
-          </div>
-        </div>
-        <div class="t396__elem tn-elem tn-elem__3326581361626042444639" data-elem-id="1626042444639"
-          data-elem-type="text" data-field-top-value="547" data-field-top-res-960-value="545"
-          data-field-top-res-640-value="548" data-field-top-res-480-value="507" data-field-top-res-320-value="661"
-          data-field-left-value="1026" data-field-left-res-960-value="825" data-field-left-res-640-value="475"
-          data-field-left-res-480-value="366" data-field-left-res-320-value="218" data-field-width-value="110"
-          data-field-width-res-480-value="93" data-field-width-res-320-value="84" data-field-axisy-value="top"
-          data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
-          data-field-leftunits-value="px" data-field-heightunits-value="" data-field-widthunits-value="px"
-          data-fields="top,left,width,container,axisx,axisy,widthunits,leftunits,topunits"
-          style="top: 547px; left: 1057.5px; width: 110px;">
-          <div class="tn-atom" field="tn_text_1626042444639">Rusty-Brown</div>
         </div>
       </div>
     </div>
