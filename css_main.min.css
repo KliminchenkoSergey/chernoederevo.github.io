@@ -1,3 +1,11 @@
+.caveat_ff {
+  font-family: 'Caveat', sans-serif;
+}
+
+.comfortaa_ff {
+  font-family: 'Comfortaa', sans-serif;
+}
+
 .t456__logo {
   display: table-cell;
   vertical-align: middle;
@@ -145,7 +153,8 @@ img:not([src]) {
 }
 
 .t-name {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Comfortaa',
+    sans-serif;
   font-weight: 600;
   color: #000
 }
@@ -156,7 +165,8 @@ img:not([src]) {
 }
 
 .t-title {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Comfortaa',
+    sans-serif;
   font-weight: 600;
   color: #000
 }
@@ -666,6 +676,8 @@ img:not([src]) {
 .t228__rightside {
   display: table-cell;
   vertical-align: middle;
+  font-family: 'Caveat',
+    sans-serif;
   text-align: right
 }
 
@@ -723,10 +735,14 @@ img:not([src]) {
 
 .t456__logo {
   display: inline-block;
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 400;
   white-space: nowrap;
-  padding-right: 30px
+  font-family: 'Caveat',
+    sans-serif;
+  vertical-align: middle;
+  padding-right: 30px;
+  padding-top: 0 !important;
 }
 
 .t456__list {
@@ -737,8 +753,9 @@ img:not([src]) {
 
 .t456__list_item {
   clear: both;
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 16px;
+  font-family: 'Caveat',
+    sans-serif;
+  font-size: 30px;
   display: inline-block;
   padding-left: 15px;
   padding-right: 15px;
